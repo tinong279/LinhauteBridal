@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latest Events</title>
+    <link rel="stylesheet" href="./src/input.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <!-- border-[2px] border-[#0f12c5] -->
+  <body class="bg-[#f8f8f8] font-sans">
+    <header class="bg-[#ffffff] shadow-sm">
+      <div
+        class="max-w-7xl mx-auto flex items-center justify-between px-[6rem] py-2"
+      >
+        <!-- LOGO -->
+        <div class="w-1/4 flex justify-center">
+          <img src="image/logo/logo.svg" class="h-1/4 object-contain" />
+        </div>
+
+        <!-- MENU -->
+        <nav class="flex-1">
+          <ul
+            class="flex justify-center items-center space-x-6 text-[#67534D] text-sm py-5"
+          >
+            <!-- <li class="relative group">
+              <a
+                href="#"
+                class="hover:text-[#C09771] text-xs whitespace-nowrap relative z-10"
+              >
+                最新活動
+              </a>
+
+        
+              <span
+                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[45px] h-[30px] rounded-full bg-[#F8F3EE] opacity-0 group-hover:opacity-100 transition-all duration-300"
+              >
+              </span>
+            </li> -->
+
+            <li class="relative group">
+              <a
+                class="group-hover:text-[#C09771] text-xs whitespace-nowrap relative z-10"
+              >
+                最新活動
+              </a>
+
+              <!-- 下拉內容 -->
+              <ul
+                class="absolute left-1/2 -translate-x-1/2 mt-2 z-20 invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-200 bg-white shadow-lg rounded-lg py-1 w-max"
+              >
+                <li
+                  class="relative py-1 px-8 whitespace-nowrap group/item leading-snug"
+                >
+                  <span
+                    class="absolute left-0 top-1/2 -translate-y-1/2 w-6 h-[1px] bg-[#C09771] opacity-0 group-hover/item:opacity-100 transition-all duration-300"
+                  ></span>
+
+                  <a class="text-xs text-[#5a4a42] hover:text-[#C09771]">
+                    命定禮服方案
+                  </a>
+                </li>
+
+                <li
+                  class="relative py-1 px-8 whitespace-nowrap group/item leading-snu"
+                >
+                  <span
+                    class="absolute left-0 top-1/2 -translate-y-1/2 w-6 h-[1px] bg-[#C09771] opacity-0 group-hover/item:opacity-100 transition-all duration-300"
+                  ></span>
+                  <a class="text-xs text-[#5a4a42] hover:text-[#C09771]">
+                    1 白 3 晚 宴客禮服方案
+                  </a>
+                </li>
+              </ul>
+
+              <span
+                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[45px] h-[30px] rounded-full bg-[#F8F3EE] opacity-0 group-hover:opacity-100 transition-all duration-300"
+              >
+              </span>
+            </li>
+
+            <li class="relative group">
+              <a
+                href="#"
+                class="group-hover:text-[#C09771] text-xs whitespace-nowrap relative z-10"
+                >品牌介紹</a
+              >
+              <span
+                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[45px] h-[30px] rounded-full bg-[#F8F3EE] opacity-0 group-hover:opacity-100 transition-all duration-300"
+              >
+              </span>
+            </li>
+            <li class="relative group">
+              <a
+                href="#"
+                class="group-hover:text-[#C09771] text-xs whitespace-nowrap relative z-10"
+                >預約須知</a
+              >
+              <span
+                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[45px] h-[30px] rounded-full bg-[#F8F3EE] opacity-0 group-hover:opacity-100 transition-all duration-300"
+              >
+              </span>
+            </li>
+            <li class="relative group">
+              <a
+                href="#"
+                class="group-hover:text-[#C09771] text-xs whitespace-nowrap relative z-10"
+                >婚紗禮服</a
+              >
+              <ul
+                class="absolute left-1/2 -translate-x-1/2 mt-2 z-20 invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-200 bg-white shadow-lg rounded-lg py-1 w-max"
+              >
+                <li
+                  class="relative py-1 px-8 whitespace-nowrap group/item leading-snug"
+                >
+                  <span
+                    class="absolute left-0 top-1/2 -translate-y-1/2 w-6 h-[1px] bg-[#C09771] opacity-0 group-hover/item:opacity-100 transition-all duration-300"
+                  ></span>
+
+                  <a class="text-xs text-[#5a4a42] hover:text-[#C09771]">
+                    婚紗禮服
+                  </a>
+                </li>
+
+                <li
+                  class="relative py-1 px-8 whitespace-nowrap group/item leading-snu"
+                >
+                  <span
+                    class="absolute left-0 top-1/2 -translate-y-1/2 w-6 h-[1px] bg-[#C09771] opacity-0 group-hover/item:opacity-100 transition-all duration-300"
+                  ></span>
+                  <a class="text-xs text-[#5a4a42] hover:text-[#C09771]">
+                    婚禮實穿
+                  </a>
+                </li>
+              </ul>
+              <span
+                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[45px] h-[30px] rounded-full bg-[#F8F3EE] opacity-0 group-hover:opacity-100 transition-all duration-300"
+              >
+              </span>
+            </li>
+            <li class="relative group">
+              <a
+                href="#"
+                class="group-hover:text-[#C09771] text-xs whitespace-nowrap relative z-10"
+                >攝影作品</a
+              >
+              <span
+                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[45px] h-[30px] rounded-full bg-[#F8F3EE] opacity-0 group-hover:opacity-100 transition-all duration-300"
+              >
+              </span>
+            </li>
+
+            <li class="relative group">
+              <a
+                href="#"
+                class="group-hover:text-[#C09771] text-xs whitespace-nowrap relative z-10"
+                >影片分享</a
+              >
+              <span
+                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[45px] h-[30px] rounded-full bg-[#F8F3EE] opacity-0 group-hover:opacity-100 transition-all duration-300"
+              >
+              </span>
+            </li>
+            <li class="relative group">
+              <a
+                href="#"
+                class="group-hover:text-[#C09771] text-xs whitespace-nowrap relative z-10"
+                >禮服知識家</a
+              >
+              <span
+                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[45px] h-[30px] rounded-full bg-[#F8F3EE] opacity-0 group-hover:opacity-100 transition-all duration-300"
+              >
+              </span>
+            </li>
+            <li class="relative group">
+              <a
+                href="#"
+                class="group-hover:text-[#C09771] text-xs whitespace-nowrap relative z-10"
+                >合作品牌</a
+              >
+              <span
+                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[45px] h-[30px] rounded-full bg-[#F8F3EE] opacity-0 group-hover:opacity-100 transition-all duration-300"
+              >
+              </span>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Button -->
+        <button
+          class="flex items-center gap-2 ml-6 bg-[#D3B599] hover:bg-[#C09771] text-white px-4 pt-1 rounded-full text-xs whitespace-nowrap"
+        >
+          <img
+            src="image\icon\reserve-button_icon.svg"
+            class="h-5 w-auto object-bottom"
+            alt=""
+          />
+          <span class="mt-[-5px]">預約試穿</span>
+        </button>
+      </div>
+    </header>
+    <section class="bg-[#ffffff]">
+      <!-- Header Title -->
+
+      <div class="flex flex-col items-center mb-[51px] relative">
+        <div class="relative inline-block">
+          <div class="text-[29px] leading-none tracking-[0.15em] inline">
+            <span class="text-[35px] text-[#C09771] font-[550]">預</span
+            ><span class="text-[29px] text-[#67534D] font-[550]">約須知</span>
+          </div>
+          <img
+            src="image/01/10.png"
+            alt="RESERVE"
+            class="hidden md:block absolute left-[calc(100%+85px)] bottom-[-17px] h-[17px]"
+          />
+        </div>
+        <div
+          class="w-full md:w-[496px] border-b border-underline border-[#C09771] mt-[17px]"
+        ></div>
+      </div>
+
+      <div
+        class="max-w-[56rem] mx-6 md:mx-10 xl:mx-auto bg-[#F9F5F1] rounded-xl p-8 md:p-16 shadow-sm flex justify-center relative z-10 my-12"
+      >
+        <div class="w-full max-w-4xl mx-auto rounded-md px-28">
+          <!-- 問題 1 -->
+          <div class="faq-item w-full mb-6">
+            <div class="w-full flex items-start mb-6">
+              <div class="w-full">
+                <div class="w-full">
+                  <div
+                    class="faqContent hidden w-full border-t border-[#c09771] items-center translate-y-[19px] transition-all duration-100"
+                  ></div>
+                  <div class="flex text-[#c09a79]">
+                    <div class="flex z-10">
+                      <div
+                        class="faqDot select-none faqBtn font-serifEng bg-[#67534D] border border-[#67534D] rounded-full w-[1.8rem] h-[1.8rem] flex items-center text-sm justify-center text-white transition cursor-pointer"
+                      >
+                        Q
+                      </div>
+                      <div
+                        class="flex items-center faqtitle font-bold select-none faqBtn text-[#67534D] text-sm tracking-wider pl-3 cursor-pointer transition-all duration-500"
+                      >
+                        試穿時您需要？
+                      </div>
+                    </div>
+                    <div class="flex items-center justify-center ml-auto z-10">
+                      <div
+                        class="faqContent hidden bg-[#c09a79] border border-[#c09a79] rounded-full w-[0.2rem] h-[0.2rem] transition translate-y-[0.05rem]"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <p
+                  class="faqContent text-[#868686] text-[12px] leading-relaxed pl-10 pr-3 -translate-y-2 hidden"
+                >
+                  準時到場，攜帶隱形內衣，淡淡的妝，膚色內褲(試穿裸紗才會美美的)，頭髮整齊以便妳拍攝美麗的試穿照，也可
+                  以攜帶妳的高跟鞋現場穿上，搭配禮服與鞋子試走了解是否舒適好走，如果妳沒有隱形內衣，我們現場也有販售隱
+                  形內衣。s
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item w-full mb-6">
+            <div class="w-full flex items-start mb-6">
+              <div class="w-full">
+                <div class="w-full">
+                  <div
+                    class="faqContent hidden w-full border-t border-[#c09771] items-center translate-y-[19px] transition-all duration-100"
+                  ></div>
+                  <div class="flex text-[#c09a79]">
+                    <div class="flex z-10">
+                      <div
+                        class="faqDot select-none faqBtn font-serifEng bg-[#67534D] border border-[#67534D] rounded-full w-[1.8rem] h-[1.8rem] flex items-center text-sm justify-center text-white transition cursor-pointer"
+                      >
+                        Q
+                      </div>
+                      <div
+                        class="flex items-center faqtitle font-bold select-none faqBtn text-[#67534D] text-sm tracking-wider pl-3 cursor-pointer transition-all duration-500"
+                      >
+                        訊息何時回覆？
+                      </div>
+                    </div>
+                    <div class="flex items-center justify-center ml-auto z-10">
+                      <div
+                        class="faqContent hidden bg-[#c09a79] border border-[#c09a79] rounded-full w-[0.2rem] h-[0.2rem] transition translate-y-[0.05rem]"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <p
+                  class="faqContent text-[#868686] text-[12px] leading-relaxed pl-10 pr-3 -translate-y-2 hidden"
+                >
+                  訊息何時回覆-回答
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item w-full mb-6">
+            <div class="w-full flex items-start mb-6">
+              <div class="w-full">
+                <div class="w-full">
+                  <div
+                    class="faqContent hidden w-full border-t border-[#c09771] items-center translate-y-[19px] transition-all duration-100"
+                  ></div>
+                  <div class="flex text-[#c09a79]">
+                    <div class="flex z-10">
+                      <div
+                        class="faqDot select-none faqBtn font-serifEng bg-[#67534D] border border-[#67534D] rounded-full w-[1.8rem] h-[1.8rem] flex items-center text-sm justify-center text-white transition cursor-pointer"
+                      >
+                        Q
+                      </div>
+                      <div
+                        class="flex items-center faqtitle font-bold select-none faqBtn text-[#67534D] text-sm tracking-wider pl-3 cursor-pointer transition-all duration-500"
+                      >
+                        想要租賃禮服
+                      </div>
+                    </div>
+                    <div class="flex items-center justify-center ml-auto z-10">
+                      <div
+                        class="faqContent hidden bg-[#c09a79] border border-[#c09a79] rounded-full w-[0.2rem] h-[0.2rem] transition translate-y-[0.05rem]"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <p
+                  class="faqContent text-[#868686] text-[12px] leading-relaxed pl-10 pr-3 -translate-y-2 hidden"
+                >
+                  想要租賃禮服-回答
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item w-full mb-6">
+            <div class="w-full flex items-start mb-6">
+              <div class="w-full">
+                <div class="w-full">
+                  <div
+                    class="faqContent hidden w-full border-t border-[#c09771] items-center translate-y-[19px] transition-all duration-100"
+                  ></div>
+                  <div class="flex text-[#c09a79]">
+                    <div class="flex z-10">
+                      <div
+                        class="faqDot select-none faqBtn font-serifEng bg-[#67534D] border border-[#67534D] rounded-full w-[1.8rem] h-[1.8rem] flex items-center text-sm justify-center text-white transition cursor-pointer"
+                      >
+                        Q
+                      </div>
+                      <div
+                        class="flex items-center faqtitle font-bold select-none faqBtn text-[#67534D] text-sm tracking-wider pl-3 cursor-pointer transition-all duration-500"
+                      >
+                        我想租禮服加拍攝影片
+                      </div>
+                    </div>
+                    <div class="flex items-center justify-center ml-auto z-10">
+                      <div
+                        class="faqContent hidden bg-[#c09a79] border border-[#c09a79] rounded-full w-[0.2rem] h-[0.2rem] transition translate-y-[0.05rem]"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <p
+                  class="faqContent text-[#868686] text-[12px] leading-relaxed pl-10 pr-3 -translate-y-2 hidden"
+                >
+                  我想租禮服加拍攝影片-回答
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full flex">
+        <img
+          src="image/index/wedding_bg.png"
+          class="w-[85%] h-auto relative -top-[80px] md:-top-[120px] lg:-top-[170px] -translate-x-[0.8rem]"
+        /><img
+          src="image/index/wedding_bg.png"
+          class="w-[85%] h-auto relative -top-[80px] md:-top-[120px] lg:-top-[170px] -translate-x-[0.8rem]"
+        />
+      </div>
+    </section>
+    <script>
+      $(document).ready(function () {
+        // $(".faqBtn").on("click", function () {
+        //   const content = $(".faqContent")
+
+        //   if (content.is(":visible")) {
+        //     // ⭐ 已經打開 → 現在要關閉 → 立刻 slideUp
+        //     content.slideUp(250)
+        //   } else {
+        //     // ⭐ 現在是關閉 → 要打開 → 延遲 300ms 再 slideDown
+        //     setTimeout(() => {
+        //       content.slideDown(250)
+        //     }, 200)
+        //   }
+
+        //   $("#faqDot").toggleClass(
+        //     "bg-[#C09771] border-[#C09771] bg-[#67534D] border-[#67534D]"
+        //   )
+        //   $(".faqtitle").toggleClass(
+        //     "-translate-y-[16px]  text-[#67534D]  text-[#C09771]"
+        //   )
+        // })
+        $(".faqBtn").on("click", function () {
+          // 找到這一題（faq-item）
+          const wrapper = $(this).closest(".faq-item")
+
+          // 找這一題的元素
+          const content = wrapper.find(".faqContent")
+          const dot = wrapper.find(".faqDot")
+          const title = wrapper.find(".faqtitle")
+
+          if (content.is(":visible")) {
+            // 已經打開 → 馬上關閉
+            content.slideUp(250)
+          } else {
+            // 關閉 → 延遲 0.2 秒打開
+            setTimeout(() => {
+              content.slideDown(250)
+            }, 200)
+          }
+
+          // 切換 Q 圓點顏色
+          dot.toggleClass("bg-[#C09771] border-[#C09771]")
+          dot.toggleClass("bg-[#67534D] border-[#67534D]")
+
+          // 切換標題動畫 + 顏色
+          title.toggleClass("-translate-y-[16px]")
+          title.toggleClass("text-[#C09771] text-[#67534D]")
+        })
+      })
+    </script>
+  </body>
+</html>

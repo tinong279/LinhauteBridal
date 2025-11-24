@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latest Events</title>
+    <link rel="stylesheet" href="./src/input.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+
+  <body class="bg-[#f8f8f8] font-sans">
+    <header class="bg-[#ffffff] shadow-sm">
+      <div
+        class="max-w-7xl mx-auto flex items-center justify-between px-[6rem] py-2"
+      >
+        <!-- LOGO -->
+        <div class="w-1/4 flex justify-center">
+          <img src="image/logo/logo.svg" class="h-1/4 object-contain" />
+        </div>
+
+        <!-- MENU -->
+        <nav class="flex-1">
+          <ul
+            class="flex justify-center items-center space-x-6 text-[#67534D] text-sm py-5"
+          >
+            <!-- <li class="relative group">
+              <a
+                href="#"
+                class="hover:text-[#C09771] text-xs whitespace-nowrap relative z-10"
+              >
+                最新活動
+              </a>
+
+        
+              <span
+                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[45px] h-[30px] rounded-full bg-[#F8F3EE] opacity-0 group-hover:opacity-100 transition-all duration-300"
+              >
+              </span>
+            </li> -->
+
+            <li class="relative group">
+              <a
+                class="group-hover:text-[#C09771] text-xs whitespace-nowrap relative z-10"
+              >
+                最新活動
+              </a>
+
+              <!-- 下拉內容 -->
+              <ul
+                class="absolute left-1/2 -translate-x-1/2 mt-2 z-20 invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-200 bg-white shadow-lg rounded-lg py-1 w-max"
+              >
+                <li
+                  class="relative py-1 px-8 whitespace-nowrap group/item leading-snug"
+                >
+                  <span
+                    class="absolute left-0 top-1/2 -translate-y-1/2 w-6 h-[1px] bg-[#C09771] opacity-0 group-hover/item:opacity-100 transition-all duration-300"
+                  ></span>
+
+                  <a class="text-xs text-[#5a4a42] hover:text-[#C09771]">
+                    命定禮服方案
+                  </a>
+                </li>
+
+                <li
+                  class="relative py-1 px-8 whitespace-nowrap group/item leading-snu"
+                >
+                  <span
+                    class="absolute left-0 top-1/2 -translate-y-1/2 w-6 h-[1px] bg-[#C09771] opacity-0 group-hover/item:opacity-100 transition-all duration-300"
+                  ></span>
+                  <a class="text-xs text-[#5a4a42] hover:text-[#C09771]">
+                    1 白 3 晚 宴客禮服方案
+                  </a>
+                </li>
+              </ul>
+
+              <span
+                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[45px] h-[30px] rounded-full bg-[#F8F3EE] opacity-0 group-hover:opacity-100 transition-all duration-300"
+              >
+              </span>
+            </li>
+
+            <li class="relative group">
+              <a
+                href="#"
+                class="group-hover:text-[#C09771] text-xs whitespace-nowrap relative z-10"
+                >品牌介紹</a
+              >
+              <span
+                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[45px] h-[30px] rounded-full bg-[#F8F3EE] opacity-0 group-hover:opacity-100 transition-all duration-300"
+              >
+              </span>
+            </li>
+            <li class="relative group">
+              <a
+                href="#"
+                class="group-hover:text-[#C09771] text-xs whitespace-nowrap relative z-10"
+                >預約須知</a
+              >
+              <span
+                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[45px] h-[30px] rounded-full bg-[#F8F3EE] opacity-0 group-hover:opacity-100 transition-all duration-300"
+              >
+              </span>
+            </li>
+            <li class="relative group">
+              <a
+                href="#"
+                class="group-hover:text-[#C09771] text-xs whitespace-nowrap relative z-10"
+                >婚紗禮服</a
+              >
+              <ul
+                class="absolute left-1/2 -translate-x-1/2 mt-2 z-20 invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-200 bg-white shadow-lg rounded-lg py-1 w-max"
+              >
+                <li
+                  class="relative py-1 px-8 whitespace-nowrap group/item leading-snug"
+                >
+                  <span
+                    class="absolute left-0 top-1/2 -translate-y-1/2 w-6 h-[1px] bg-[#C09771] opacity-0 group-hover/item:opacity-100 transition-all duration-300"
+                  ></span>
+
+                  <a class="text-xs text-[#5a4a42] hover:text-[#C09771]">
+                    婚紗禮服
+                  </a>
+                </li>
+
+                <li
+                  class="relative py-1 px-8 whitespace-nowrap group/item leading-snu"
+                >
+                  <span
+                    class="absolute left-0 top-1/2 -translate-y-1/2 w-6 h-[1px] bg-[#C09771] opacity-0 group-hover/item:opacity-100 transition-all duration-300"
+                  ></span>
+                  <a class="text-xs text-[#5a4a42] hover:text-[#C09771]">
+                    婚禮實穿
+                  </a>
+                </li>
+              </ul>
+              <span
+                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[45px] h-[30px] rounded-full bg-[#F8F3EE] opacity-0 group-hover:opacity-100 transition-all duration-300"
+              >
+              </span>
+            </li>
+            <li class="relative group">
+              <a
+                href="#"
+                class="group-hover:text-[#C09771] text-xs whitespace-nowrap relative z-10"
+                >攝影作品</a
+              >
+              <span
+                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[45px] h-[30px] rounded-full bg-[#F8F3EE] opacity-0 group-hover:opacity-100 transition-all duration-300"
+              >
+              </span>
+            </li>
+
+            <li class="relative group">
+              <a
+                href="#"
+                class="group-hover:text-[#C09771] text-xs whitespace-nowrap relative z-10"
+                >影片分享</a
+              >
+              <span
+                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[45px] h-[30px] rounded-full bg-[#F8F3EE] opacity-0 group-hover:opacity-100 transition-all duration-300"
+              >
+              </span>
+            </li>
+            <li class="relative group">
+              <a
+                href="#"
+                class="group-hover:text-[#C09771] text-xs whitespace-nowrap relative z-10"
+                >禮服知識家</a
+              >
+              <span
+                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[45px] h-[30px] rounded-full bg-[#F8F3EE] opacity-0 group-hover:opacity-100 transition-all duration-300"
+              >
+              </span>
+            </li>
+            <li class="relative group">
+              <a
+                href="#"
+                class="group-hover:text-[#C09771] text-xs whitespace-nowrap relative z-10"
+                >合作品牌</a
+              >
+              <span
+                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[45px] h-[30px] rounded-full bg-[#F8F3EE] opacity-0 group-hover:opacity-100 transition-all duration-300"
+              >
+              </span>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Button -->
+        <button
+          class="flex items-center gap-2 ml-6 bg-[#D3B599] hover:bg-[#C09771] text-white px-4 pt-1 rounded-full text-xs whitespace-nowrap"
+        >
+          <img
+            src="image\icon\reserve-button_icon.svg"
+            class="h-5 w-auto object-bottom"
+            alt=""
+          />
+          <span class="mt-[-5px]">預約試穿</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <!-- <section class="relative mt-1">
+     
+      <img
+        id="mainBanner"
+        src="./image/banner/banner_windows.jpg"
+        alt="Bridal"
+        class="w-full h-[700px] object-cover transition-all duration-500"
+      />
+
+      
+      <div
+        class="absolute inset-0 flex flex-col justify-center items-end pr-16"
+      >
+        
+        <div
+          class="absolute right-[12rem] top-1/2 transform -translate-y-1/2 flex flex-col items-center"
+        >
+          <img
+            src="image/logo/logo-white.svg"
+            alt="Linhaute Bridal Small Logo"
+            class="h-[5.25rem] object-contain opacity-95"
+          />
+
+          
+          <div
+            class="mt-4 flex items-center text-white tracking-widest text-xs space-x-2"
+          >
+            <button id="prevBtn" class="font-serifEng hover:text-[#D3B599]">
+              PREV
+            </button>
+            <div class="w-10 h-[1px] bg-white/70"></div>
+            <button id="nextBtn" class="font-serifEng hover:text-[#D3B599]">
+              NEXT
+            </button>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- <section class="w-full bg-white py-20">
+      <div class="max-w-[1400px] mx-auto">
+       
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+         
+          <div class="relative">
+            <img src="image/index/about_bg.jpg" class="w-full object-cover" />
+
+            
+            <div
+              class="absolute inset-0 flex items-center justify-center text-white/60 tracking-[0.5em] font-serifEng text-4xl lg:text-5xl"
+            >
+              L I N H A U T E &nbsp; B R I D A L
+            </div>
+          </div>
+
+          
+          <div class="flex flex-col justify-center px-6 lg:px-10">
+            <h2
+              class="text-[#5a4a42] text-center lg:text-left text-xl tracking-widest"
+            >
+              品牌介紹
+            </h2>
+
+            <p
+              class="text-[#C09771] text-sm tracking-[0.4em] uppercase mt-1 mb-6 text-center lg:text-left"
+            >
+              Abouts
+            </p>
+
+            <h3
+              class="font-serifEng text-[#5a4a42] text-lg mb-4 text-center lg:text-left"
+            >
+              LinHaute Bridal — 您好禮服
+            </h3>
+
+            <p class="text-[#5a4a42] text-sm leading-7 mb-4">
+              婚紗，不只是禮服，更是女孩一生一次的夢想與儀式感。
+              每一件作品代表著一個職人的心意，我們希望成為那份特別的存在。
+            </p>
+
+            <p class="text-[#5a4a42] text-sm leading-7 mb-4">
+              我們堅持使用精緻手工與頂級布料，一針一線都以最細緻的標準呈現，
+              讓每位新娘在最重要的時刻，都能穿上屬於自己的獨特風格。
+            </p>
+
+            <p class="text-[#C09771] text-sm leading-7 font-light">
+              妳會擁有，看起來都好美；我們覺得，妳穿起來更美。
+            </p>
+          </div>
+        </div>
+
+        <div class="relative w-full">
+         
+          <img src="image/index/fixbg.jpg" class="w-full h-auto object-cover" />
+
+          
+          <div class="absolute inset-0 flex">
+           
+            <div class="flex flex-col justify-center items-start w-1/2 pl-10">
+              <p
+                class="font-serifTC text-[#C09771] text-2xl mb-6 tracking-wide"
+              >
+                將最美浪漫藏成你們的永恆
+              </p>
+
+              <p
+                class="text-[#C09771] tracking-widest text-sm text-right ml-auto"
+              >
+                — LinHaute Bridal
+              </p>
+            </div>
+
+            
+            <div class="w-1/2"></div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="bg-[#ffffff]">
+      <!-- Header Title -->
+
+      <div class="w-full h-32 flex flex-col items-center justify-end">
+        <div class="grid grid-cols-3 w-1/3 gap-10">
+          <div class=""></div>
+          <div class="flex justify-center">
+            <img src="image/01/03.png" class="h-7 mb-4" />
+          </div>
+          <div class="flex justify-end">
+            <img
+              src="image/01/02.png"
+              alt="NEWS"
+              class="h-5 mt-5 translate-y-[7px]"
+            />
+          </div>
+        </div>
+        <!-- 下面那條線 -->
+        <div class="w-full flex justify-center">
+          <div class="w-1/3 border-t border-[#c9a782]"></div>
+        </div>
+      </div>
+
+      <!-- Main Container -->
+      <!-- border-[2px] border-[#0f12c5] -->
+      <div
+        class="max-w-[62rem] mx-auto mt-12 bg-[#F9F5F1] rounded-xl p-10 shadow-sm flex justify-center"
+      >
+        <!-- 內容區 -->
+        <div class="w-2/3">
+          <!-- 標題 & 小圖示 -->
+          <div class="flex flex-col justify-between items-start">
+            <div>
+              <p class="text-[#c09a79] text-xs tracking-[0.2em]">
+                #限時優惠 NT$16,000
+              </p>
+              <h2
+                class="mt-2 mb-3 text-[#5b4634] text-lg tracking-widest font-normal"
+              >
+                命定禮服方案
+              </h2>
+            </div>
+            <div class="w-full">
+              <div
+                class="w-full border-t border-[#c9a782] flex items-center translate-y-[19px]"
+              ></div>
+              <div class="flex text-[#c09a79]">
+                <div class="flex space-x-2 ml-auto z-10">
+                  <a
+                    href="#"
+                    class="bg-[#F9F5F1] border border-[#c09a79] rounded-full w-[1.95rem] h-[1.95rem] flex items-center justify-center hover:bg-[#c09a79] hover:text-white transition"
+                    ><img
+                      src="image/01/04.png"
+                      alt=""
+                      class="w-[0.85rem] h-auto"
+                  /></a>
+                  <a
+                    href="#"
+                    class="bg-[#F9F5F1] border border-[#c09a79] rounded-full w-[1.95rem] h-[1.95rem] flex items-center justify-center hover:bg-[#c09a79] hover:text-white transition"
+                    ><img src="image/01/05.png" alt="" class="w-2 h-auto"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <!-- Icons -- border-[2px] border-[#c50f52]-->
+          </div>
+
+          <!-- 文字敘述 -->
+          <p class="text-[#D3B599]">每一件禮服，都是一段故事的開端。</p>
+
+          <div
+            class="text-[#868686] mt-3 leading-relaxed text-[0.7rem] tracking-widest"
+          >
+            <p>在這個方案中，妳將擁有：</p>
+            <p>1 套白紗，承載純潔與幸福的象徵</p>
+            <p>2 套晚禮服，演繹華麗與自信的身影</p>
+            <p class="text-[#D3B599]">
+              特別禮遇：其中 1 套由 經典款 升級為
+              精緻蕾絲款，在細節間展現優雅與浪漫
+            </p>
+          </div>
+
+          <!-- 優惠價格 -->
+          <div class="pt-4">
+            <h3 class="text-[#D3B599] tracking-widest mb-2">優惠價格</h3>
+            <p class="text-[#868686] text-[0.7rem] tracking-widest">
+              原價 NT$20,000<br />
+              限時優惠 NT$16,000<br />
+              讓妳的每一次轉身，都成為命定時刻的最佳注解。
+            </p>
+          </div>
+
+          <!-- 圖片 -->
+          <div class="pt-6">
+            <img src="image/01/01.png" class="w-full shadow" alt="活動圖片" />
+          </div>
+
+          <!-- Button -->
+        </div>
+      </div>
+      <div class="flex items-center justify-center h-32">
+        <button
+          class="flex items-center justify-center gap-2 ml-6 bg-[#D3B599] hover:bg-[#C09771] text-white px-5 rounded-full text-xs whitespace-nowrap"
+        >
+          <img
+            src="image\icon\reserve-button_icon.svg"
+            class="h-7 mt-1 w-auto object-bottom translate-y-[2px]"
+            alt=""
+          />
+
+          <span class="tracking-widest">立即預約</span>
+        </button>
+      </div>
+    </section>
+
+    <section>
+      <div class="relative w-full mt-10">
+        <!-- 線：整條橫跨全頁，往下移一點 -->
+        <div
+          class="absolute top-[70%] left-0 w-full border-t border-[#d4b79e]"
+        ></div>
+
+        <!-- 內容：中文置中、英文靠中文更近 -->
+        <div
+          class="relative left-[5.1rem] flex justify-center items-end gap-2 pb-2"
+        >
+          <span class="text-[#C09771] tracking-widest text-2xl">填</span>
+          <span class="text-[#67534D] tracking-widest text-lg">
+            寫預約表單
+          </span>
+
+          <!-- 英文往下貼線＋靠近中文 -->
+          <span
+            class="text-[#C09771] tracking-[0.35em] text-xl relative top-[4px] font-serifEng font-bold"
+          >
+            R
+          </span>
+          <span
+            class="text-[#C09771] tracking-[0.35em] text-sm relative right-3 top-[2px] font-serifEng"
+          >
+            ESERVE
+          </span>
+          <span
+            class="text-[#C09771] tracking-[0.35em] text-xl relative top-[4px] font-serifEng font-bold"
+          >
+            N
+          </span>
+          <span
+            class="text-[#C09771] tracking-[0.35em] text-sm relative right-3 top-[2px] font-serifEng"
+          >
+            OW
+          </span>
+        </div>
+      </div>
+      <span
+        class="text-[#67534D] tracking-widest text-xs flex justify-center my-6"
+        >非常感謝您前來 LinHaute Bridal
+        挑選禮服，為了更加瞭解您的需求，請您撥冗完整填寫以下資訊，我們將盡速回覆您近期尚可預約的時段，謝謝！</span
+      >
+
+      <div class="max-w-4xl mx-auto px-6">
+        <!-- Section: 預約說明 -->
+        <div class="max-w-5xl mx-auto mt-10 mb-2">
+          <!-- 外框 -->
+          <div class="rounded-xl overflow-hidden shadow-sm">
+            <!-- 上方深咖啡色 -->
+            <div class="bg-[#5c463d] py-[0.4rem] text-center">
+              <h2 class="text-white tracking-widest text-xs">預約聯絡</h2>
+            </div>
+
+            <!-- 下方米白區域 -->
+            <div
+              class="bg-[#f7f3ef] p-5 text-[#5a4a42] leading-relaxed flex justify-center"
+            >
+              <ol class="list-decimal ml-6 space-y-2 text-xs">
+                <li>為了提供給新人完整的服務，採取線上預約制。</li>
+                <li>
+                  只要填寫預約單，我們將在 2
+                  日內與您連絡。若沒有連絡上您，可能是您的預約單沒有發送成功喔！
+                </li>
+                <li>
+                  我們的人力有限，為了保障您的權益，如不克前來請提前通知，以便另外為您安排參觀時間。
+                </li>
+                <li>貼心提醒：預約試衣的新人體記得攜帶 nu bra 以及淡妝。</li>
+                <li>
+                  如 2 日內未收到聯繫，請撥打：07-2372269
+                  請珍惜每次的預約機會，感謝大家的體諒及配合。
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section: 基本資料 -->
+        <!-- 整個外框 -->
+        <div class="max-w-5xl mx-auto mt-3 mb-2">
+          <!-- 外框 -->
+          <div class="rounded-xl overflow-hidden shadow-sm bg-[#f7f3ef]">
+            <!-- 上方深咖啡色 -->
+            <div class="bg-[#D3B599] py-[0.4rem] text-center">
+              <h2 class="text-white tracking-widest text-xs">基本資訊</h2>
+            </div>
+
+            <!-- 下方米白區域 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-10 mx-36">
+              <!-- 聯絡姓名 -->
+              <div>
+                <label class="block text-[#6D5B4C] mb-2 text-xs">
+                  *聯絡姓名
+                </label>
+                <input
+                  type="text"
+                  class="w-full border-0 border-b border-[#D6BFA6] rounded-none bg-white px-3 py-1 text-[14px] text-[#6D5B4C] font-light placeholder:text-[#C5C8CC] focus:border-[#C09771] focus:outline-none focus:ring-0"
+                />
+              </div>
+
+              <!-- 希望來店諮詢日期 -->
+              <div>
+                <label class="block text-[#6D5B4C] mb-2 text-xs">
+                  *希望來店諮詢日期？
+                </label>
+                <input
+                  type="text"
+                  placeholder="DD / MM / YY"
+                  class="w-full border-0 border-b border-[#D6BFA6] rounded-none bg-white px-3 py-1 text-[14px] text-[#6D5B4C] font-light placeholder:text-[#C5C8CC] focus:border-[#C09771] focus:outline-none focus:ring-0"
+                />
+              </div>
+
+              <!-- E-mail -->
+              <div>
+                <label class="block text-[#6D5B4C] mb-2 text-xs">
+                  *E-mail
+                </label>
+                <input
+                  type="email"
+                  class="w-full border-0 border-b border-[#D6BFA6] rounded-none bg-white px-3 py-1 text-[14px] text-[#6D5B4C] font-light placeholder:text-[#C5C8CC] focus:border-[#C09771] focus:outline-none focus:ring-0"
+                />
+              </div>
+
+              <!-- 結婚日期 -->
+              <div>
+                <label class="block text-[#6D5B4C] mb-2 text-xs">
+                  結婚日期
+                </label>
+                <input
+                  type="text"
+                  placeholder="DD / MM / YY"
+                  class="w-full border-0 border-b border-[#D6BFA6] rounded-none bg-white px-3 py-1 text-[14px] text-[#6D5B4C] font-light placeholder:text-[#C5C8CC] focus:border-[#C09771] focus:outline-none focus:ring-0"
+                />
+              </div>
+
+              <!-- 聯絡電話 -->
+              <div>
+                <label class="block text-[#6D5B4C] mb-2 text-xs">
+                  *聯絡電話
+                </label>
+                <input
+                  type="text"
+                  class="w-full border-0 border-b border-[#D6BFA6] rounded-none bg-white px-3 py-1 text-[14px] text-[#6D5B4C] font-light placeholder:text-[#C5C8CC] focus:border-[#C09771] focus:outline-none focus:ring-0"
+                />
+              </div>
+
+              <!-- 拍攝日期 -->
+              <div>
+                <label class="block text-[#6D5B4C] mb-2 text-xs">
+                  拍攝日期
+                </label>
+                <input
+                  type="text"
+                  placeholder="DD / MM / YY"
+                  class="w-full border-0 border-b border-[#D6BFA6] rounded-none bg-white px-3 py-1 text-[14px] text-[#6D5B4C] font-light placeholder:text-[#C5C8CC] focus:border-[#C09771] focus:outline-none focus:ring-0"
+                />
+                <p class="text-[#D3B599] text-[12px] mt-1">
+                  若有確定拍攝時間可填寫
+                </p>
+              </div>
+
+              <!-- 方便聯絡時段 -->
+              <div class="md:col-span-1">
+                <label class="block text-[#6D5B4C] mb-2 text-xs">
+                  *方便聯絡時段
+                </label>
+                <select
+                  class="w-full border-0 border-b border-[#D6BFA6] rounded-none bg-white px-3 py-1 text-[14px] text-[#6D5B4C] font-light placeholder:text-[#C5C8CC] focus:border-[#C09771] focus:outline-none focus:ring-0"
+                >
+                  <option class="text-[#C5C8CC]">選擇時段</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section: 方案選擇 -->
+        <div class="max-w-5xl mx-auto mt-3 mb-24">
+          <!-- 外框 -->
+          <div class="rounded-xl overflow-hidden shadow-sm bg-[#f7f3ef]">
+            <!-- 上方深咖啡色 -->
+            <div class="bg-[#D3B599] py-[0.4rem] text-center">
+              <h2 class="text-white tracking-widest text-xs">方案選擇</h2>
+            </div>
+
+            <!-- 下方米白區域 -->
+            <!-- grid grid-cols-1 md:grid-cols-2 gap-8 my-10 mx-36 -->
+
+            <div class="mt-10 mx-36 space-y-5">
+              <!-- 1. 婚紗拍攝方案 -->
+              <div>
+                <p class="text-[#6D5B4C] font-medium mb-4 text-xs">
+                  婚紗拍攝方案 與 婚宴方案推薦
+                </p>
+
+                <label class="flex items-center gap-2 mb-2 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    class="w-4 h-4 border-[#C49B72] text-white bg-white checked:!bg-[#C49B72] focus:ring-0"
+                  />
+
+                  <span class="text-[#8c8177] text-xs">
+                    婚紗拍攝 3 套方案與婚宴當日禮服 3 套方案 $51,800
+                  </span>
+                </label>
+
+                <label class="flex items-center gap-2 mb-2 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    class="w-4 h-4 border-[#C49B72] text-white bg-white checked:!bg-[#C49B72] focus:ring-0"
+                  />
+
+                  <span class="text-[#8c8177] text-xs">
+                    婚紗拍攝 3 套方案 $35,800 up
+                  </span>
+                </label>
+              </div>
+              <!-- 水平線 -->
+              <hr class="border-[#D8C9B9]" />
+              <!-- 2. 租賃禮服方案 -->
+              <div>
+                <p class="text-[#6D5B4C] font-medium mb-4 text-xs">
+                  租賃禮服方案
+                </p>
+
+                <label class="flex items-center gap-2 mb-2 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    class="w-4 h-4 border-[#C49B72] text-white bg-white checked:!bg-[#C49B72] focus:ring-0"
+                  />
+
+                  <span class="text-[#8c8177] text-xs">
+                    單租 1 套白紗 $8,000 up
+                  </span>
+                </label>
+
+                <label class="flex items-center gap-2 mb-2 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    class="w-4 h-4 border-[#C49B72] text-white bg-white checked:!bg-[#C49B72] focus:ring-0"
+                  />
+
+                  <span class="text-[#8c8177] text-xs">
+                    單租 1 套 晚宴禮服 $6,000 up
+                  </span>
+                </label>
+              </div>
+              <hr class="border-[#D8C9B9] mt-6" />
+              <!-- 3. 渠道來源 -->
+
+              <p class="text-[#6D5B4C] font-medium mb-4 text-xs">
+                是經由什麼方式得知 LIN 禮服館呢？
+              </p>
+              <div
+                x-data="{ open: false, selected: '請選擇' }"
+                class="relative w-1/2"
+              >
+                <!-- 選擇框（關閉時） -->
+                <button
+                  @click="open = !open"
+                  class="w-full border-b border-[#D6BFA6] bg-white px-3 py-2 text-[14px] text-[#6D5B4C] font-light flex justify-between items-center"
+                >
+                  <span x-text="selected"></span>
+                  <svg
+                    class="w-4 h-4 text-[#6D5B4C]"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </button>
+
+                <!-- 下拉選單 -->
+                <div
+                  x-show="open"
+                  @click.outside="open = false"
+                  class="absolute left-0 right-0 mt-1 bg-white border border-[#D6BFA6] shadow-lg z-10"
+                >
+                  <!-- 選項樣式，可重複使用 -->
+                  <div
+                    class="px-3 py-2 text-[14px] text-[#6D5B4C] cursor-pointer hover:bg-[#C49B72] hover:text-white"
+                    @click="selected = 'LIN 粉絲團照片很吸引妳'; open = false"
+                  >
+                    LIN 粉絲團照片很吸引妳
+                  </div>
+
+                  <div
+                    class="px-3 py-2 text-[14px] text-[#6D5B4C] cursor-pointer hover:bg-[#C49B72] hover:text-white"
+                    @click="selected = '親友介紹'; open = false"
+                  >
+                    親友介紹
+                  </div>
+
+                  <div
+                    class="px-3 py-2 text-[14px] text-[#6D5B4C] cursor-pointer hover:bg-[#C49B72] hover:text-white"
+                    @click="selected = '攝影師或造型師轉介紹'; open = false"
+                  >
+                    攝影師或造型師轉介紹
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4. 其他備註 -->
+              <div>
+                <p class="text-[#6D5B4C] font-medium text-xs">其他備註</p>
+                <textarea
+                  class="w-full h-15 border-0 /* 移除所有邊框 */ border-b border-[#D6BFA6] /* 加回底線 */ rounded-none /* 移除圓角 */ bg-white px-3 py-2 text-[14px] text-[#6D5B4C] font-light focus:outline-none focus:ring-0 resize-none"
+                ></textarea>
+              </div>
+
+              <!-- 5. 底部按鈕 -->
+              <div class="flex justify-center gap-6 pb-8 pt-3">
+                <button
+                  class="flex items-center gap-1 bg-[#ffffff] text-[#C49B72] px-4 py-1 rounded-full text-xs tracking-wide hover:bg-[#F1E4DA] transition"
+                >
+                  <img
+                    src="image/icon/returns_bronze.svg"
+                    alt="返回圖示"
+                    class="w-4 h-5"
+                  />重新填寫
+                </button>
+
+                <button
+                  class="group flex items-center gap-1 bg-[#f7f3ef] border border-[#C49B72] text-[#C49B72] px-5 py-1 rounded-full text-xs tracking-wide hover:bg-[#B58664] hover:text-[#ffffff] transition"
+                >
+                  確認送出
+                  <img
+                    src="image/icon/chevron.png"
+                    class="w-4 h-3.5 relative top-[1px] group-hover:brightness-0 group-hover:invert"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-[#D3B599] text-white text-sm">
+      <!-- 上方區塊 -->
+      <!-- <div class="top-[70%] left-0 w-full border-t border-[#ffffff]"></div> -->
+      <!-- <div class="w-full h-[100px] bg-[#ffffff] mb-[20px]"></div> -->
+      <div class="border-t border-b border-white/50 py-4">
+        <div class="w-full h-[1px] bg-[#ffffff] mb-[45px]"></div>
+        <div class="container mx-auto px-28 grid grid-cols-3 items-center">
+          <!-- 左側資訊 -->
+          <div class="space-y-2 leading-relaxed text-xs">
+            <p>服務時間｜10:00~18:00</p>
+            <p>固定公休｜每週三</p>
+            <p>聯絡電話｜07-2372269</p>
+            <p>
+              門市地址｜高雄市林森一路189號8樓　
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=高雄市林森一路189號8樓"
+                target="_blank"
+                class="underline"
+                >立即導航</a
+              >
+            </p>
+          </div>
+
+          <!-- 中間 Logo + 文案 -->
+          <div class="text-center">
+            <img src="image/logo/logo-white.svg" class="mx-auto w-40 mb-2" />
+          </div>
+
+          <!-- 右側社群 icon -->
+          <div class="flex flex-col items-center gap-4">
+            <div class="flex items-center gap-5">
+              <a
+                href="https://line.me/"
+                class="w-8 h-8 border border-white/70 rounded-full p-1 flex items-center justify-center"
+              >
+                <img src="image/icon/line.png" class="w-4 h-4 object-contain" />
+              </a>
+              <a
+                href="https://instagram/"
+                class="w-8 h-8 border border-white/70 rounded-full p-1 flex items-center justify-center"
+              >
+                <img
+                  src="image/icon/instagram.png"
+                  class="w-4 h-4 object-contain"
+                />
+              </a>
+              <a
+                href="https://facebook/"
+                class="w-8 h-8 border border-white/70 rounded-full p-1 flex items-center justify-center"
+              >
+                <img
+                  src="image/icon/facebook-app-symbol.png"
+                  class="w-4 h-4 object-contain"
+                />
+              </a>
+              <a
+                href="https://youtube/"
+                class="w-8 h-8 border border-white/70 rounded-full p-1 flex items-center justify-center"
+              >
+                <img
+                  src="image/icon/youtube.png"
+                  class="w-4 h-4 object-contain"
+                />
+              </a>
+              <a
+                href="https://E-mail/"
+                class="w-8 h-8 border border-white/70 rounded-full p-1 flex items-center justify-center"
+              >
+                <img
+                  src="image/icon/email.png"
+                  class="w-4 h-4 object-contain"
+                />
+              </a>
+            </div>
+            <div class="tracking-[0.3em] text-xs">
+              高 級 定 製 禮 服 ・ 採 預 約 制
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-[1px] bg-[#ffffff] mt-[45px]"></div>
+      </div>
+
+      <!-- 下方著作權 -->
+      <div
+        class="bg-[white] text-center py-1 text-[#D3B599] text-[12px] tracking-wide"
+      >
+        Copyright © Linhaute Bridal 2025. All Rights Reserved　 Design by
+        <a href="#" class="underline">澳羽網路</a>
+      </div>
+    </footer>
+
+    <script>
+      $(function () {
+        const images = [
+          "./image/banner/banner_windows.jpg",
+          "./image/demo/about/about01.jpg",
+          "./image/demo/about/about02.jpg",
+        ]
+
+        let index = 0
+
+        function updateBanner() {
+          $("#mainBanner").fadeOut(300, function () {
+            $(this).attr("src", images[index]).fadeIn(300)
+          })
+        }
+
+        $("#nextBtn").click(function () {
+          index = (index + 1) % images.length
+          updateBanner()
+        })
+
+        $("#prevBtn").click(function () {
+          index = (index - 1 + images.length) % images.length
+          updateBanner()
+        })
+      })
+    </script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+  </body>
+</html>
