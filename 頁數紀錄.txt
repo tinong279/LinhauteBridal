@@ -14,3 +14,5 @@ http://localhost:5173/bridal2.html
 http://localhost:5173/wedding.html
 8.攝影作品
 http://localhost:5173/portfolio.html
+9.攝影作品
+http://localhost:5173/portfolio2.html
