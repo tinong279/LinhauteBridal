@@ -1,0 +1,16 @@
+1.首頁
+http://localhost:5173/index.html
+2.最新活動 
+http://localhost:5173/latest_events.html
+3.品牌介紹
+http://localhost:5173/about.html
+4.預約須知
+http://localhost:5173/reserve.html
+5.婚紗禮服 
+http://localhost:5173/bridal.html
+6.婚紗禮服-2 
+http://localhost:5173/bridal2.html
+7.婚禮實穿
+http://localhost:5173/wedding.html
+8.攝影作品
+http://localhost:5173/portfolio.html

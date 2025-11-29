@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latest Events</title>
+    <link rel="stylesheet" href="./src/input.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+
+  <body class="bg-[#ffffff] font-sans">
+    <section class="bg-[#ffffff] pt-20">
+      <!-- ------------------------開頭標題------------------------ -->
+      <div class="w-full">
+        <div class="tracking-[-0.01em] leading-none text-center">
+          <span class="text-[25px] sm:text-[32px] text-[#C09771] font-[400]"
+            >攝</span
+          >
+          <span
+            class="tracking-[0.1em] text-[19px] sm:text-[26px] text-[#67534D] font-[400]"
+            >影作品</span
+          >
+        </div>
+
+        <div class="mx-auto w-[30%] w-max-[581px] flex justify-end relative">
+          <div class="flex items-end leading-[0.6] tracking-[0.2em]">
+            <span class="text-[29px] font-serifEng font-[500] text-[#c9a782]"
+              >P</span
+            >
+            <span class="text-[18px] font-serifEng font-[400] text-[#c9a782]"
+              >ORTFOLIO</span
+            >
+          </div>
+        </div>
+
+        <div
+          class="mx-auto w-[30%] w-max-[581px] border-b border-[#c9a782]"
+        ></div>
+      </div>
+      <!-- ------------------------開頭標題------------------------ -->
+
+      <!-- ------------------------內容版心（重點）------------------------ -->
+
+      <div class="w-full flex flex-col justify-center items-center py-10">
+        <div
+          class="w-[90%] lg:w-[72.5%] max-w-[1392px] rounded-md flex justify-center bg-[#f9f5f1] py-7 px-8 lg:px-40 text-[13px] text-[#868686]"
+        >
+          <div class="flex w-[45%]">
+            <label class="block text-[#6D5B4C] mb-2 text-xs"></label>
+            <input
+              type="text"
+              placeholder="搜尋攝影師"
+              class="w-full border-0 border-b border-[#D6BFA6] rounded-none bg-white px-3 py-1 text-[14px] text-[#868686] font-light placeholder:text-[#868686] focus:border-[#C09771] focus:outline-none focus:ring-0"
+            />
+
+            <span class="flex items-center -translate-x-5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="none"
+                stroke="#C09771"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="8" cy="8" r="5"></circle>
+                <line x1="12" y1="12" x2="17" y2="17"></line>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- ------------------------內容版心------------------------ -->
+
+      <!-- ------------------------第一排------------------------ -->
+      <div
+        class="mb-10 pb-10 border-b border-[#c9a782] grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 sm:gap-9 w-[90%] lg:w-[72.5%] max-w-[1392px] mx-auto"
+      >
+        <div class="group w-full max-w-[420px] flex flex-col items-center">
+          <!-- 圖片 -->
+          <div
+            class="w-full aspect-square overflow-hidden bg-white opacity-100 group-hover:opacity-20 transition duration-500"
+          >
+            <img
+              src="public/image/demo/portfolio/YY美學.jpg"
+              class="w-full h-full object-cover"
+              alt=""
+            />
+          </div>
+
+          <!-- 標題 -->
+          <h3
+            class="mt-2 text-center text-[16px] text-[#67534d] group-hover:text-[#c09771] tracking-wide transition duration-500"
+          >
+            YY美學
+          </h3>
+
+          <!-- 描述文字 -->
+          <p class="my-3 text-[#777] text-[12px] leading-relaxed">
+            拍照不受侷限什麼風格！拍出愛與溫度是我攝影的初衷
+          </p>
+
+          <!-- 按鈕：平常淺色；hover 深色 -->
+          <button
+            class="mt-auto w-full py-5 rounded-md bg-[#f2ebe4] text-[#c19a72] text-[12px] flex items-center justify-center gap-2 transition duration-500 group-hover:bg-[#c19a72] group-hover:text-white"
+          >
+            瀏覽作品
+            <img
+              src="image/icon/chevron.png"
+              class="w-4 h-3.5 relative top-[1px] group-hover:brightness-0 group-hover:invert transition duration-500"
+            />
+          </button>
+        </div>
+
+        <div class="group w-full max-w-[420px] flex flex-col items-center">
+          <!-- 圖片 -->
+          <div
+            class="w-full aspect-square overflow-hidden bg-white opacity-100 group-hover:opacity-20 transition duration-500"
+          >
+            <img
+              src="public/image/demo/portfolio/悄無 Qiaowu 攝影.jpg"
+              class="w-full h-full object-cover"
+              alt=""
+            />
+          </div>
+
+          <!-- 標題 -->
+          <h3
+            class="mt-2 text-center text-[16px] text-[#67534d] group-hover:text-[#c09771] tracking-wide transition duration-500"
+          >
+            悄無 Qiaowu 攝影
+          </h3>
+
+          <!-- 描述文字 -->
+          <p class="my-3 text-[#777] text-[12px] leading-relaxed">
+            善於唯美的人像拍攝手法，拍攝屬於你們自然 互動的情感。
+          </p>
+
+          <!-- 按鈕：平常淺色；hover 深色 -->
+          <button
+            class="mt-auto w-full py-5 rounded-md bg-[#f2ebe4] text-[#c19a72] text-[12px] flex items-center justify-center gap-2 transition duration-500 group-hover:bg-[#c19a72] group-hover:text-white"
+          >
+            瀏覽作品
+            <img
+              src="image/icon/chevron.png"
+              class="w-4 h-3.5 relative top-[1px] group-hover:brightness-0 group-hover:invert transition duration-500"
+            />
+          </button>
+        </div>
+
+        <div class="group w-full max-w-[420px] flex flex-col items-center">
+          <!-- 圖片 -->
+          <div
+            class="w-full aspect-square overflow-hidden bg-white opacity-100 group-hover:opacity-20 transition duration-500"
+          >
+            <img
+              src="public/image/demo/portfolio/IAN 伊恩.jpg"
+              class="w-full h-full object-cover"
+              alt=""
+            />
+          </div>
+
+          <!-- 標題 -->
+          <h3
+            class="mt-2 text-center text-[16px] text-[#67534d] group-hover:text-[#c09771] tracking-wide transition duration-500"
+          >
+            IAN 伊恩
+          </h3>
+
+          <!-- 描述文字 -->
+          <p class="my-3 text-[#777] text-[12px] leading-relaxed">
+            擅長極簡風格 | 雜誌感拍攝
+          </p>
+
+          <!-- 按鈕：平常淺色；hover 深色 -->
+          <button
+            class="mt-auto w-full py-5 rounded-md bg-[#f2ebe4] text-[#c19a72] text-[12px] flex items-center justify-center gap-2 transition duration-500 group-hover:bg-[#c19a72] group-hover:text-white"
+          >
+            瀏覽作品
+            <img
+              src="image/icon/chevron.png"
+              class="w-4 h-3.5 relative top-[1px] group-hover:brightness-0 group-hover:invert transition duration-500"
+            />
+          </button>
+        </div>
+
+        <div class="group w-full max-w-[420px] flex flex-col items-center">
+          <!-- 圖片 -->
+          <div
+            class="w-full aspect-square overflow-hidden bg-white opacity-100 group-hover:opacity-20 transition duration-500"
+          >
+            <img
+              src="public/image/demo/portfolio/Whisper-JR.jpg"
+              class="w-full h-full object-cover"
+              alt=""
+            />
+          </div>
+
+          <!-- 標題 -->
+          <h3
+            class="mt-2 text-center text-[16px] text-[#67534d] group-hover:text-[#c09771] tracking-wide transition duration-500"
+          >
+            Whisper-JR
+          </h3>
+
+          <!-- 描述文字 -->
+          <p class="my-3 text-[#777] text-[12px] leading-relaxed">
+            拍攝妳的韓式婚紗
+          </p>
+
+          <!-- 按鈕：平常淺色；hover 深色 -->
+          <button
+            class="mt-auto w-full py-5 rounded-md bg-[#f2ebe4] text-[#c19a72] text-[12px] flex items-center justify-center gap-2 transition duration-500 group-hover:bg-[#c19a72] group-hover:text-white"
+          >
+            瀏覽作品
+            <img
+              src="image/icon/chevron.png"
+              class="w-4 h-3.5 relative top-[1px] group-hover:brightness-0 group-hover:invert transition duration-500"
+            />
+          </button>
+        </div>
+      </div>
+
+      <!-- ------------------------第二排------------------------ -->
+      <div
+        class="mb-10 pb-10 border-b border-[#c9a782] grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 sm:gap-9 w-[90%] lg:w-[72.5%] max-w-[1392px] mx-auto"
+      >
+        <div class="group w-full max-w-[420px] flex flex-col items-center">
+          <!-- 圖片 -->
+          <div
+            class="w-full aspect-square overflow-hidden bg-white opacity-100 group-hover:opacity-20 transition duration-500"
+          >
+            <img
+              src="public/image/demo/portfolio/LW Photography 老崴攝影.jpg"
+              class="w-full h-full object-cover"
+              alt=""
+            />
+          </div>
+
+          <!-- 標題 -->
+          <h3
+            class="mt-2 text-center text-[16px] text-[#67534d] group-hover:text-[#c09771] tracking-wide transition duration-500"
+          >
+            LW Photography 老崴攝影
+          </h3>
+
+          <!-- 描述文字 -->
+          <p class="my-3 text-[#777] text-[12px] leading-relaxed">
+            魯士攝影團隊｜客製攝影服務│擅長紀錄婚 禮、自然流露的情感
+          </p>
+
+          <!-- 按鈕：平常淺色；hover 深色 -->
+          <button
+            class="mt-auto w-full py-5 rounded-md bg-[#f2ebe4] text-[#c19a72] text-[12px] flex items-center justify-center gap-2 transition duration-500 group-hover:bg-[#c19a72] group-hover:text-white"
+          >
+            瀏覽作品
+            <img
+              src="image/icon/chevron.png"
+              class="w-4 h-3.5 relative top-[1px] group-hover:brightness-0 group-hover:invert transition duration-500"
+            />
+          </button>
+        </div>
+
+        <div class="group w-full max-w-[420px] flex flex-col items-center">
+          <!-- 圖片 -->
+          <div
+            class="w-full aspect-square overflow-hidden bg-white opacity-100 group-hover:opacity-20 transition duration-500"
+          >
+            <img
+              src="public/image/demo/portfolio/Alvin Studio.jpg"
+              class="w-full h-full object-cover"
+              alt=""
+            />
+          </div>
+
+          <!-- 標題 -->
+          <h3
+            class="mt-2 text-center text-[16px] text-[#67534d] group-hover:text-[#c09771] tracking-wide transition duration-500"
+          >
+            Alvin Studio
+          </h3>
+
+          <!-- 描述文字 -->
+          <p class="my-3 text-[#777] text-[12px] leading-relaxed">
+            擅長婚禮拍攝｜婚紗拍攝｜人物寫真｜全家福
+          </p>
+
+          <!-- 按鈕：平常淺色；hover 深色 -->
+          <button
+            class="mt-auto w-full py-5 rounded-md bg-[#f2ebe4] text-[#c19a72] text-[12px] flex items-center justify-center gap-2 transition duration-500 group-hover:bg-[#c19a72] group-hover:text-white"
+          >
+            瀏覽作品
+            <img
+              src="image/icon/chevron.png"
+              class="w-4 h-3.5 relative top-[1px] group-hover:brightness-0 group-hover:invert transition duration-500"
+            />
+          </button>
+        </div>
+
+        <div class="group w-full max-w-[420px] flex flex-col items-center">
+          <!-- 圖片 -->
+          <div
+            class="w-full aspect-square overflow-hidden bg-white opacity-100 group-hover:opacity-20 transition duration-500"
+          >
+            <img
+              src="public/image/demo/portfolio/森沐攝影工作室.jpg"
+              class="w-full h-full object-cover"
+              alt=""
+            />
+          </div>
+
+          <!-- 標題 -->
+          <h3
+            class="mt-2 text-center text-[16px] text-[#67534d] group-hover:text-[#c09771] tracking-wide transition duration-500"
+          >
+            森沐攝影工作室
+          </h3>
+
+          <!-- 描述文字 -->
+          <p class="my-3 text-[#777] text-[12px] leading-relaxed">
+            自主婚紗｜商業拍攝｜人物寫真｜婚禮紀錄｜
+            證件照｜海內外婚錄｜SDE快剪快播
+          </p>
+
+          <!-- 按鈕：平常淺色；hover 深色 -->
+          <button
+            class="mt-auto w-full py-5 rounded-md bg-[#f2ebe4] text-[#c19a72] text-[12px] flex items-center justify-center gap-2 transition duration-500 group-hover:bg-[#c19a72] group-hover:text-white"
+          >
+            瀏覽作品
+            <img
+              src="image/icon/chevron.png"
+              class="w-4 h-3.5 relative top-[1px] group-hover:brightness-0 group-hover:invert transition duration-500"
+            />
+          </button>
+        </div>
+
+        <div class="group w-full max-w-[420px] flex flex-col items-center">
+          <!-- 圖片 -->
+          <div
+            class="w-full aspect-square overflow-hidden bg-white opacity-100 group-hover:opacity-20 transition duration-500"
+          >
+            <img
+              src="public/image/demo/portfolio/葉子.jpg"
+              class="w-full h-full object-cover"
+              alt=""
+            />
+          </div>
+
+          <!-- 標題 -->
+          <h3
+            class="mt-2 text-center text-[16px] text-[#67534d] group-hover:text-[#c09771] tracking-wide transition duration-500"
+          >
+            葉子
+          </h3>
+
+          <!-- 描述文字 -->
+          <p class="my-3 text-[#777] text-[12px] leading-relaxed">
+            擅長商業拍攝、個人寫真、動態影像、婚紗包 套方案、個人寫真方案
+          </p>
+
+          <!-- 按鈕：平常淺色；hover 深色 -->
+          <button
+            class="mt-auto w-full py-5 rounded-md bg-[#f2ebe4] text-[#c19a72] text-[12px] flex items-center justify-center gap-2 transition duration-500 group-hover:bg-[#c19a72] group-hover:text-white"
+          >
+            瀏覽作品
+            <img
+              src="image/icon/chevron.png"
+              class="w-4 h-3.5 relative top-[1px] group-hover:brightness-0 group-hover:invert transition duration-500"
+            />
+          </button>
+        </div>
+      </div>
+
+      <!-- ------------------------第三排------------------------ -->
+      <div
+        class="mb-10 pb-10 border-b border-[#c9a782] grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 sm:gap-9 w-[90%] lg:w-[72.5%] max-w-[1392px] mx-auto"
+      >
+        <div class="group w-full max-w-[420px] flex flex-col items-center">
+          <!-- 圖片 -->
+          <div
+            class="w-full aspect-square overflow-hidden bg-white opacity-100 group-hover:opacity-20 transition duration-500"
+          >
+            <img
+              src="public/image/demo/portfolio/Tang Photographer.jpg"
+              class="w-full h-full object-cover"
+              alt=""
+            />
+          </div>
+
+          <!-- 標題 -->
+          <h3
+            class="mt-2 text-center text-[16px] text-[#67534d] group-hover:text-[#c09771] tracking-wide transition duration-500"
+          >
+            Tang Photographer
+          </h3>
+
+          <!-- 描述文字 -->
+          <p class="my-3 text-[#777] text-[12px] leading-relaxed">
+            擅長婚紗攝影、婚禮攝影、活動紀錄、孕婦寫 真
+          </p>
+
+          <!-- 按鈕：平常淺色；hover 深色 -->
+          <button
+            class="mt-auto w-full py-5 rounded-md bg-[#f2ebe4] text-[#c19a72] text-[12px] flex items-center justify-center gap-2 transition duration-500 group-hover:bg-[#c19a72] group-hover:text-white"
+          >
+            瀏覽作品
+            <img
+              src="image/icon/chevron.png"
+              class="w-4 h-3.5 relative top-[1px] group-hover:brightness-0 group-hover:invert transition duration-500"
+            />
+          </button>
+        </div>
+
+        <div class="group w-full max-w-[420px] flex flex-col items-center">
+          <!-- 圖片 -->
+          <div
+            class="w-full aspect-square overflow-hidden bg-white opacity-100 group-hover:opacity-20 transition duration-500"
+          >
+            <img
+              src="public/image/demo/portfolio/Le Bonheur.jpg"
+              class="w-full h-full object-cover"
+              alt=""
+            />
+          </div>
+
+          <!-- 標題 -->
+          <h3
+            class="mt-2 text-center text-[16px] text-[#67534d] group-hover:text-[#c09771] tracking-wide transition duration-500"
+          >
+            Le Bonheur
+          </h3>
+
+          <!-- 描述文字 -->
+          <p class="my-3 text-[#777] text-[12px] leading-relaxed">
+            擅長情感自然風格與電影感
+          </p>
+
+          <!-- 按鈕：平常淺色；hover 深色 -->
+          <button
+            class="mt-auto w-full py-5 rounded-md bg-[#f2ebe4] text-[#c19a72] text-[12px] flex items-center justify-center gap-2 transition duration-500 group-hover:bg-[#c19a72] group-hover:text-white"
+          >
+            瀏覽作品
+            <img
+              src="image/icon/chevron.png"
+              class="w-4 h-3.5 relative top-[1px] group-hover:brightness-0 group-hover:invert transition duration-500"
+            />
+          </button>
+        </div>
+
+        <div class="group w-full max-w-[420px] flex flex-col items-center">
+          <!-- 圖片 -->
+          <div
+            class="w-full aspect-square overflow-hidden bg-white opacity-100 group-hover:opacity-20 transition duration-500"
+          >
+            <img
+              src="public/image/demo/portfolio/A.M.jpg"
+              class="w-full h-full object-cover"
+              alt=""
+            />
+          </div>
+
+          <!-- 標題 -->
+          <h3
+            class="mt-2 text-center text-[16px] text-[#67534d] group-hover:text-[#c09771] tracking-wide transition duration-500"
+          >
+            A.M
+          </h3>
+
+          <!-- 描述文字 -->
+          <p class="my-3 text-[#777] text-[12px] leading-relaxed">
+            擅長風格婚紗、人像攝影、婚禮紀錄
+          </p>
+
+          <!-- 按鈕：平常淺色；hover 深色 -->
+          <button
+            class="mt-auto w-full py-5 rounded-md bg-[#f2ebe4] text-[#c19a72] text-[12px] flex items-center justify-center gap-2 transition duration-500 group-hover:bg-[#c19a72] group-hover:text-white"
+          >
+            瀏覽作品
+            <img
+              src="image/icon/chevron.png"
+              class="w-4 h-3.5 relative top-[1px] group-hover:brightness-0 group-hover:invert transition duration-500"
+            />
+          </button>
+        </div>
+
+        <div class="group w-full max-w-[420px] flex flex-col items-center">
+          <!-- 圖片 -->
+          <div
+            class="w-full aspect-square overflow-hidden bg-white opacity-100 group-hover:opacity-20 transition duration-500"
+          >
+            <img
+              src="public/image/demo/portfolio/SJ Wedding.jpg"
+              class="w-full h-full object-cover"
+              alt=""
+            />
+          </div>
+
+          <!-- 標題 -->
+          <h3
+            class="mt-2 text-center text-[16px] text-[#67534d] group-hover:text-[#c09771] tracking-wide transition duration-500"
+          >
+            SJ Wedding
+          </h3>
+
+          <!-- 描述文字 -->
+          <p class="my-3 text-[#777] text-[12px] leading-relaxed">
+            用不設限的多變視角，紀錄最美的樣子
+          </p>
+
+          <!-- 按鈕：平常淺色；hover 深色 -->
+          <button
+            class="mt-auto w-full py-5 rounded-md bg-[#f2ebe4] text-[#c19a72] text-[12px] flex items-center justify-center gap-2 transition duration-500 group-hover:bg-[#c19a72] group-hover:text-white"
+          >
+            瀏覽作品
+            <img
+              src="image/icon/chevron.png"
+              class="w-4 h-3.5 relative top-[1px] group-hover:brightness-0 group-hover:invert transition duration-500"
+            />
+          </button>
+        </div>
+      </div>
+      <!-- ------------------------第四排------------------------ -->
+      <div
+        class="mb-10 pb-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 sm:gap-9 w-[90%] lg:w-[72.5%] max-w-[1392px] mx-auto"
+      >
+        <div class="group w-full max-w-[420px] flex flex-col items-center">
+          <!-- 圖片 -->
+          <div
+            class="w-full aspect-square overflow-hidden bg-white opacity-100 group-hover:opacity-20 transition duration-500"
+          >
+            <img
+              src="public/image/demo/portfolio/小花布朗森.jpg"
+              class="w-full h-full object-cover"
+              alt=""
+            />
+          </div>
+
+          <!-- 標題 -->
+          <h3
+            class="mt-2 text-center text-[16px] text-[#67534d] group-hover:text-[#c09771] tracking-wide transition duration-500"
+          >
+            小花布朗森
+          </h3>
+
+          <!-- 描述文字 -->
+          <p class="my-3 text-[#777] text-[12px] leading-relaxed">
+            婚禮攝影、婚紗、親子寫真、私奔寫真
+          </p>
+
+          <!-- 按鈕：平常淺色；hover 深色 -->
+          <button
+            class="mt-auto w-full py-5 rounded-md bg-[#f2ebe4] text-[#c19a72] text-[12px] flex items-center justify-center gap-2 transition duration-500 group-hover:bg-[#c19a72] group-hover:text-white"
+          >
+            瀏覽作品
+            <img
+              src="image/icon/chevron.png"
+              class="w-4 h-3.5 relative top-[1px] group-hover:brightness-0 group-hover:invert transition duration-500"
+            />
+          </button>
+        </div>
+
+        <div class="group w-full max-w-[420px] flex flex-col items-center">
+          <!-- 圖片 -->
+          <div
+            class="w-full aspect-square overflow-hidden bg-white opacity-100 group-hover:opacity-20 transition duration-500"
+          >
+            <img
+              src="public/image/demo/portfolio/Peter Lin 攝影工作室.jpg"
+              class="w-full h-full object-cover"
+              alt=""
+            />
+          </div>
+
+          <!-- 標題 -->
+          <h3
+            class="mt-2 text-center text-[16px] text-[#67534d] group-hover:text-[#c09771] tracking-wide transition duration-500"
+          >
+            Peter Lin 攝影工作室
+          </h3>
+
+          <!-- 描述文字 -->
+          <p class="my-3 text-[#777] text-[12px] leading-relaxed">
+            把稍縱即逝的美好，寫成一張張有溫度的相片 婚禮、婚紗、孕期、家庭寫真
+          </p>
+
+          <!-- 按鈕：平常淺色；hover 深色 -->
+          <button
+            class="mt-auto w-full py-5 rounded-md bg-[#f2ebe4] text-[#c19a72] text-[12px] flex items-center justify-center gap-2 transition duration-500 group-hover:bg-[#c19a72] group-hover:text-white"
+          >
+            瀏覽作品
+            <img
+              src="image/icon/chevron.png"
+              class="w-4 h-3.5 relative top-[1px] group-hover:brightness-0 group-hover:invert transition duration-500"
+            />
+          </button>
+        </div>
+
+        <div class="group w-full max-w-[420px] flex flex-col items-center">
+          <!-- 圖片 -->
+          <div
+            class="w-full aspect-square overflow-hidden bg-white opacity-100 group-hover:opacity-20 transition duration-500"
+          >
+            <img
+              src="public/image/demo/portfolio/影像說書人工作室.jpg"
+              class="w-full h-full object-cover"
+              alt=""
+            />
+          </div>
+
+          <!-- 標題 -->
+          <h3
+            class="mt-2 text-center text-[16px] text-[#67534d] group-hover:text-[#c09771] tracking-wide transition duration-500"
+          >
+            影像說書人工作室
+          </h3>
+
+          <!-- 描述文字 -->
+          <p class="my-3 text-[#777] text-[12px] leading-relaxed">
+            擅長自然拍攝互動及個人故事風格拍攝。
+          </p>
+
+          <!-- 按鈕：平常淺色；hover 深色 -->
+          <button
+            class="mt-auto w-full py-5 rounded-md bg-[#f2ebe4] text-[#c19a72] text-[12px] flex items-center justify-center gap-2 transition duration-500 group-hover:bg-[#c19a72] group-hover:text-white"
+          >
+            瀏覽作品
+            <img
+              src="image/icon/chevron.png"
+              class="w-4 h-3.5 relative top-[1px] group-hover:brightness-0 group-hover:invert transition duration-500"
+            />
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
