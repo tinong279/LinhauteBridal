@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latest Events</title>
+    <link rel="stylesheet" href="./src/input.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+
+  <body class="bg-[#ffffff] font-sans">
+    <section class="bg-[#ffffff] pt-20">
+      <!-- ------------------------開頭標題------------------------ -->
+      <div class="w-full">
+        <div class="tracking-[-0.01em] leading-none text-center">
+          <span class="text-[25px] sm:text-[32px] text-[#C09771] font-[400]"
+            >影</span
+          >
+          <span
+            class="tracking-[0.1em] text-[19px] sm:text-[26px] text-[#67534D] font-[400]"
+            >片分享</span
+          >
+        </div>
+
+        <div
+          class="mx-auto w-full xl:w-[30%] w-max-[581px] flex justify-end relative"
+        >
+          <div class="flex items-end leading-[0.6] tracking-[0.2em]">
+            <span
+              class="text-[22px] sm:text-[29px] font-serifEng font-[500] text-[#c9a782]"
+              >V</span
+            >
+            <span
+              class="text-[11px] sm:text-[18px] font-serifEng font-[400] text-[#c9a782]"
+              >IDEO</span
+            >
+          </div>
+        </div>
+
+        <div
+          class="mx-auto w-full xl:w-[30%] w-max-[581px] border-b border-[#c9a782]"
+        ></div>
+      </div>
+      <!-- ------------------------開頭標題------------------------ -->
+
+      <!-- ------------------------內容版心（重點）------------------------ -->
+      <div
+        class="w-[90%] lg:w-[72.5%] max-w-[1392px] mx-auto my-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"
+      >
+        <!-- 單一影片卡片 -->
+        <div class="flex flex-col gap-3">
+          <!-- 影片框（16:9 自適應） -->
+          <div class="w-full aspect-[424/318] overflow-hidden">
+            <iframe
+              class="w-full h-full"
+              src="https://www.youtube.com/embed/8fjBAUvTAGo"
+              title="YouTube video player"
+              frameborder="0"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+
+          <!-- 標籤 -->
+          <div class="flex items-center gap-2 text-[16px]">
+            <!-- 訂製款（含圓圈背景） -->
+            <div class="relative inline-block">
+              <span class="bg-transparen relative z-10 text-[#c09771]"
+                >訂製款</span
+              >
+              <div
+                class="absolute w-7 h-7 rounded-full bg-[#f9f5f1] -z-1 -left-[0.5rem] top-1/2 -translate-y-1/2"
+              ></div>
+            </div>
+
+            <!-- 斜單肩禮服 -->
+            <span class="text-[#67534D]">｜ 斜單肩禮服</span>
+
+            <!-- 淺藍 -->
+            <span class="text-[#67534D]">｜ 淺藍</span>
+          </div>
+        </div>
+        <!-- 單一影片卡片 -->
+        <div class="flex flex-col gap-3">
+          <!-- 影片框（16:9 自適應） -->
+          <div class="w-full aspect-[424/318] overflow-hidden rounded">
+            <iframe
+              class="w-full h-full"
+              src="https://www.youtube.com/embed/fi6EhzKP7_c"
+              title="YouTube video player"
+              frameborder="0"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+
+          <!-- 標籤 -->
+          <div class="flex items-center gap-2 text-[16px]">
+            <!-- 訂製款（含圓圈背景） -->
+            <div class="relative inline-block">
+              <span class="bg-transparen relative z-10 text-[#c09771]"
+                >訂製款</span
+              >
+              <div
+                class="absolute w-7 h-7 rounded-full bg-[#f9f5f1] -z-1 -left-[0.5rem] top-1/2 -translate-y-1/2"
+              ></div>
+            </div>
+
+            <!-- 斜單肩禮服 -->
+            <span class="text-[#67534D]">｜ 星夜白紗</span>
+          </div>
+        </div>
+        <!-- 單一影片卡片 -->
+        <div class="flex flex-col gap-3">
+          <!-- 影片框（16:9 自適應） -->
+          <div class="w-full aspect-[424/318] overflow-hidden rounded">
+            <iframe
+              class="w-full h-full"
+              src="https://www.youtube.com/embed/6wLTNhXY4gw"
+              title="YouTube video player"
+              frameborder="0"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+
+          <!-- 標籤 -->
+          <div class="flex items-center gap-2 text-[16px]">
+            <!-- 訂製款（含圓圈背景） -->
+            <div class="relative inline-block">
+              <span class="bg-transparen relative z-10 text-[#c09771]"
+                >訂製款</span
+              >
+              <div
+                class="absolute w-7 h-7 rounded-full bg-[#f9f5f1] -z-1 -left-[0.5rem] top-1/2 -translate-y-1/2"
+              ></div>
+            </div>
+
+            <!-- 斜單肩禮服 -->
+            <span class="text-[#67534D]">｜ 夏季輕紗</span>
+          </div>
+        </div>
+        <!-- 單一影片卡片 -->
+        <div class="flex flex-col gap-3">
+          <!-- 影片框（16:9 自適應） -->
+          <div class="w-full aspect-[424/318] overflow-hidden rounded">
+            <iframe
+              class="w-full h-full"
+              src="https://www.youtube.com/embed/txdjP4chCDw"
+              title="YouTube video player"
+              frameborder="0"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+
+          <!-- 標籤 -->
+          <div class="flex items-center gap-2 text-[16px]">
+            <!-- 訂製款（含圓圈背景） -->
+            <div class="relative inline-block">
+              <span class="bg-transparen relative z-10 text-[#c09771]"
+                >訂製款</span
+              >
+              <div
+                class="absolute w-7 h-7 rounded-full bg-[#f9f5f1] -z-1 -left-[0.5rem] top-1/2 -translate-y-1/2"
+              ></div>
+            </div>
+
+            <!-- 斜單肩禮服 -->
+            <span class="text-[#67534D]">｜ 仙氣禮服</span>
+          </div>
+        </div>
+        <!-- 單一影片卡片 -->
+        <div class="flex flex-col gap-3">
+          <!-- 影片框（16:9 自適應） -->
+          <div class="w-full aspect-[424/318] overflow-hidden rounded">
+            <iframe
+              class="w-full h-full"
+              src="https://www.youtube.com/embed/yu58xMAoPqM"
+              title="YouTube video player"
+              frameborder="0"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+
+          <!-- 標籤 -->
+          <div class="flex items-center gap-2 text-[16px]">
+            <!-- 訂製款（含圓圈背景） -->
+            <div class="relative inline-block">
+              <span class="bg-transparen relative z-10 text-[#c09771]"
+                >訂製款</span
+              >
+              <div
+                class="absolute w-7 h-7 rounded-full bg-[#f9f5f1] -z-1 -left-[0.5rem] top-1/2 -translate-y-1/2"
+              ></div>
+            </div>
+
+            <!-- 斜單肩禮服 -->
+            <span class="text-[#67534D]">｜ 銀色削肩禮服</span>
+          </div>
+        </div>
+        <!-- 單一影片卡片 -->
+        <div class="flex flex-col gap-3">
+          <!-- 影片框（16:9 自適應） -->
+          <div class="w-full aspect-[424/318] overflow-hidden rounded">
+            <iframe
+              class="w-full h-full"
+              src="https://www.youtube.com/embed/GmXJ_febpxE"
+              title="YouTube video player"
+              frameborder="0"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+
+          <!-- 標籤 -->
+          <div class="flex items-center gap-2 text-[16px]">
+            <!-- 訂製款（含圓圈背景） -->
+            <div class="relative inline-block">
+              <span class="bg-transparen relative z-10 text-[#c09771]"
+                >訂製款</span
+              >
+              <div
+                class="absolute w-7 h-7 rounded-full bg-[#f9f5f1] -z-1 -left-[0.5rem] top-1/2 -translate-y-1/2"
+              ></div>
+            </div>
+
+            <!-- 斜單肩禮服 -->
+            <span class="text-[#67534D]">｜ 星空女神</span>
+          </div>
+        </div>
+        <!-- 單一影片卡片 -->
+        <div class="flex flex-col gap-3">
+          <!-- 影片框（16:9 自適應） -->
+          <div class="w-full aspect-[424/318] overflow-hidden rounded">
+            <iframe
+              class="w-full h-full"
+              src="https://www.youtube.com/embed/jL4P7PJiO3w"
+              title="YouTube video player"
+              frameborder="0"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+
+          <!-- 標籤 -->
+          <div class="flex items-center gap-2 text-[16px]">
+            <!-- 訂製款（含圓圈背景） -->
+            <div class="relative inline-block">
+              <span class="bg-transparen relative z-10 text-[#c09771]"
+                >訂製款</span
+              >
+              <div
+                class="absolute w-7 h-7 rounded-full bg-[#f9f5f1] -z-1 -left-[0.5rem] top-1/2 -translate-y-1/2"
+              ></div>
+            </div>
+
+            <!-- 斜單肩禮服 -->
+            <span class="text-[#67534D]">｜ 復古小蛋糕</span>
+          </div>
+        </div>
+        <!-- 單一影片卡片 -->
+        <div class="flex flex-col gap-3">
+          <!-- 影片框（16:9 自適應） -->
+          <div class="w-full aspect-[424/318] overflow-hidden rounded">
+            <iframe
+              class="w-full h-full"
+              src="https://www.youtube.com/embed/GmXJ_febpxE"
+              title="YouTube video player"
+              frameborder="0"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+
+          <!-- 標籤 -->
+          <div class="flex items-center gap-2 text-[16px]">
+            <!-- 訂製款（含圓圈背景） -->
+            <div class="relative inline-block">
+              <span class="bg-transparen relative z-10 text-[#c09771]"
+                >訂製款</span
+              >
+              <div
+                class="absolute w-7 h-7 rounded-full bg-[#f9f5f1] -z-1 -left-[0.5rem] top-1/2 -translate-y-1/2"
+              ></div>
+            </div>
+
+            <!-- 斜單肩禮服 -->
+            <span class="text-[#67534D]">｜ 專屬訂製禮服</span>
+          </div>
+        </div>
+        <!-- 單一影片卡片 -->
+        <div class="flex flex-col gap-3">
+          <!-- 影片框（16:9 自適應） -->
+          <div class="w-full aspect-[424/318] overflow-hidden rounded">
+            <iframe
+              class="w-full h-full"
+              src="https://www.youtube.com/embed/luh4Jn8ywd4"
+              title="YouTube video player"
+              frameborder="0"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+
+          <!-- 標籤 -->
+          <div class="flex items-center gap-2 text-[16px]">
+            <!-- 訂製款（含圓圈背景） -->
+            <div class="relative inline-block">
+              <span class="bg-transparen relative z-10 text-[#c09771]"
+                >Prewedding 婚紗花絮</span
+              >
+              <div
+                class="absolute w-7 h-7 rounded-full bg-[#f9f5f1] -z-1 -left-[0.5rem] top-1/2 -translate-y-1/2"
+              ></div>
+            </div>
+
+            <!-- 斜單肩禮服 -->
+            <span class="text-[#67534D]">｜ 佳琪＆嘉豪</span>
+          </div>
+        </div>
+
+        <!-- 單一影片卡片 END -->
+
+        <!-- 多複製幾個就會變成像你截圖那樣 -->
+      </div>
+    </section>
+  </body>
+</html>

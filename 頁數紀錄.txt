@@ -16,3 +16,5 @@ http://localhost:5173/wedding.html
 http://localhost:5173/portfolio.html
 9.攝影作品
 http://localhost:5173/portfolio2.html
+10.影片分享
+http://localhost:5173/video.html
