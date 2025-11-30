@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latest Events</title>
+    <link rel="stylesheet" href="./src/input.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+
+  <body class="bg-[#ffffff] font-sans">
+    <section class="bg-[#ffffff] pt-20">
+      <!-- ------------------------開頭標題------------------------ -->
+      <div class="w-full">
+        <div class="tracking-[-0.01em] leading-none text-center">
+          <span class="text-[25px] sm:text-[32px] text-[#C09771] font-[400]"
+            >合</span
+          >
+          <span
+            class="tracking-[0.1em] text-[19px] sm:text-[26px] text-[#67534D] font-[400]"
+            >作品牌</span
+          >
+        </div>
+
+        <div
+          class="mx-auto w-full xl:w-[30%] w-max-[581px] flex justify-end relative"
+        >
+          <div class="flex items-end leading-[0.6] tracking-[0.2em]">
+            <span
+              class="text-[22px] sm:text-[29px] font-serifEng font-[500] text-[#c9a782]"
+              >P</span
+            >
+            <span
+              class="text-[11px] sm:text-[18px] font-serifEng font-[400] text-[#c9a782]"
+              >ARTNER</span
+            >
+          </div>
+        </div>
+
+        <div
+          class="mx-auto w-full xl:w-[30%] w-max-[581px] border-b border-[#c9a782]"
+        ></div>
+      </div>
+      <!-- ------------------------開頭標題------------------------ -->
+
+      <!-- ------------------------分類按鈕------------------------ -->
+      <div class="w-full flex flex-col justify-center items-center">
+        <div
+          class="mt-10 mb-0 sm:mb-10 flex-col w-[90%] lg:w-[73%] max-w-[1392px] rounded-md flex bg-[#f9f5f1] py-6 px-2 sm:px-8 xl:px-40"
+        >
+          <div
+            class="flex flex-wrap xl:flex-nowrap gap-3 justify-center items-center"
+          >
+            <button
+              data-category="all"
+              class="filter-btn group w-[114px] py-1.5 flex items-center justify-center text-[#c09771] rounded-full text-[12px] tracking-wide hover:bg-[#c09771] bg-white hover:text-white transition"
+            >
+              全部
+            </button>
+            <button
+              data-category="category-1"
+              class="filter-btn group w-[114px] py-1.5 flex items-center justify-center gap-2 text-[#c09771] rounded-full text-[12px] tracking-wide hover:bg-[#c09771] bg-white hover:text-white transition"
+            >
+              捧花
+            </button>
+            <button
+              data-category="category-2"
+              class="filter-btn group w-[114px] py-1.5 flex items-center justify-center gap-2 text-[#c09771] rounded-full text-[12px] tracking-wide hover:bg-[#c09771] bg-white hover:text-white transition"
+            >
+              婚戒
+            </button>
+            <button
+              data-category="category-3"
+              class="filter-btn group w-[114px] py-1.5 flex items-center justify-center gap-2 text-[#c09771] rounded-full text-[12px] tracking-wide hover:bg-[#c09771] bg-white hover:text-white transition"
+            >
+              喜餅
+            </button>
+            <button
+              data-category="category-4"
+              class="filter-btn group w-[114px] py-1.5 flex items-center justify-center gap-2 text-[#c09771] rounded-full text-[12px] tracking-wide hover:bg-[#c09771] bg-white hover:text-white transition"
+            >
+              婚禮布置主持
+            </button>
+            <button
+              data-category="category-5"
+              class="filter-btn group w-[114px] py-1.5 flex items-center justify-center gap-2 text-[#c09771] rounded-full text-[12px] tracking-wide hover:bg-[#c09771] bg-white hover:text-white transition"
+            >
+              婚鞋
+            </button>
+          </div>
+        </div>
+        <!-------------------------------- 捧花 -------------------------------->
+        <div
+          class="card category-1 my-10 w-full flex items-center justify-center"
+        >
+          <!-- 左線 -->
+          <div class="w-[33%] max-w-[555px] border-t border-[#c09771]"></div>
+
+          <!-- 中間標題 -->
+          <span
+            class="px-6 text-[#67534d] text-xs md:text-base tracking-widest"
+          >
+            捧花
+          </span>
+
+          <!-- 右線 -->
+          <div class="w-[33%] max-w-[555px] border-t border-[#c09771]"></div>
+        </div>
+        <div class="mb-12 card category-1 w-[50%] lg:w-[16%] flex flex-col">
+          <img src="public/image/demo/partner/澆澆花.jpg" alt="" />
+          <p class="py-2 text-center text-[#67534d] text-[16px]">澆澆花</p>
+          <p class="text-center text-[#868686] text-[14px]">
+            Havanlubie Wedding
+          </p>
+        </div>
+        <!-------------------------------- 婚戒 -------------------------------->
+        <div
+          class="card category-2 my-10 w-full flex items-center justify-center"
+        >
+          <!-- 左線 -->
+          <div class="w-[33%] max-w-[555px] border-t border-[#c09771]"></div>
+
+          <!-- 中間標題 -->
+          <span
+            class="px-6 text-[#67534d] text-xs md:text-base tracking-widest"
+          >
+            婚戒
+          </span>
+
+          <!-- 右線 -->
+          <div class="w-[33%] max-w-[555px] border-t border-[#c09771]"></div>
+        </div>
+        <div class="mb-12 card category-2 w-[50%] lg:w-[16%] flex flex-col">
+          <img src="public/image/demo/partner/festaria TOKYO.jpg" alt="" />
+          <p class="py-2 text-center text-[#67534d] text-[16px]">
+            festaria TOKYO
+          </p>
+        </div>
+        <!-------------------------------- 喜餅 -------------------------------->
+        <div
+          class="card category-3 my-10 w-full flex items-center justify-center"
+        >
+          <!-- 左線 -->
+          <div class="w-[33%] max-w-[555px] border-t border-[#c09771]"></div>
+
+          <!-- 中間標題 -->
+          <span
+            class="px-6 text-[#67534d] text-xs md:text-base tracking-widest"
+          >
+            喜餅
+          </span>
+
+          <!-- 右線 -->
+          <div class="w-[33%] max-w-[555px] border-t border-[#c09771]"></div>
+        </div>
+        <div class="mb-12 card category-3 w-[50%] lg:w-[16%] flex flex-col">
+          <img src="public/image/demo/partner/法絨法式手工甜點.jpg" alt="" />
+          <p class="py-2 text-center text-[#67534d] text-[16px]">
+            法絨法式手工甜點
+          </p>
+          <p class="text-center text-[#868686] text-[14px]">
+            Velvet Patisserie
+          </p>
+        </div>
+        <!-------------------------------- 婚禮佈置主持 -------------------------------->
+        <div
+          class="card category-4 my-10 w-full flex items-center justify-center"
+        >
+          <!-- 左線 -->
+          <div class="w-[33%] max-w-[555px] border-t border-[#c09771]"></div>
+
+          <!-- 中間標題 -->
+          <span
+            class="px-6 text-[#67534d] text-xs md:text-base tracking-widest"
+          >
+            婚禮佈置主持
+          </span>
+
+          <!-- 右線 -->
+          <div class="w-[33%] max-w-[555px] border-t border-[#c09771]"></div>
+        </div>
+        <div
+          class="card category-4 mb-12 w-full flex lg:flex-row flex-col justify-center items-center gap-10"
+        >
+          <div class="w-[50%] lg:w-[16%] flex flex-col">
+            <img src="public/image/demo/partner/樂玩創意.jpg" alt="" />
+            <p class="py-2 text-center text-[#67534d] text-[16px]">樂玩創意</p>
+            <p class="text-center text-[#868686] text-[14px]">
+              樂團 / 婚禮企劃&主持
+            </p>
+          </div>
+          <div class="w-[50%] lg:w-[16%] flex flex-col">
+            <img src="public/image/demo/partner/知·百年.jpg" alt="" />
+            <p class="py-2 text-center text-[#67534d] text-[16px]">知·百年</p>
+            <p class="text-center text-[#868686] text-[14px]">Forever WED</p>
+          </div>
+          <div class="w-[50%] lg:w-[16%] flex flex-col">
+            <img src="public/image/demo/partner/艾美喜帖婚禮.jpg" alt="" />
+            <p class="py-2 text-center text-[#67534d] text-[16px]">
+              艾美喜帖婚禮
+            </p>
+            <p class="text-center text-[#868686] text-[14px]">i-beauty</p>
+          </div>
+        </div>
+
+        <!-------------------------------- 婚鞋  -------------------------------->
+        <div
+          class="card category-5 my-10 w-full flex items-center justify-center"
+        >
+          <!-- 左線 -->
+          <div class="w-[33%] max-w-[555px] border-t border-[#c09771]"></div>
+
+          <!-- 中間標題 -->
+          <span
+            class="px-6 text-[#67534d] text-xs md:text-base tracking-widest"
+          >
+            婚鞋
+          </span>
+
+          <!-- 右線 -->
+          <div class="w-[33%] max-w-[555px] border-t border-[#c09771]"></div>
+        </div>
+        <div class="mb-12 card category-5 w-[50%] lg:w-[16%] flex flex-col">
+          <img
+            src="public/image/demo/partner/ReSarah 時尚手作婚紗鞋.jpg"
+            alt=""
+          />
+          <p class="py-2 text-center text-[#67534d] text-[16px]">
+            ReSarah 時尚手作婚紗鞋
+          </p>
+          <p class="text-center text-[#868686] text-[14px]">Wedding Shoes</p>
+        </div>
+      </div>
+    </section>
+    <script>
+      $(document).ready(function () {
+        $(".filter-btn").click(function () {
+          const category = $(this).data("category")
+
+          if (category === "all") {
+            $(".card").fadeIn(200)
+          } else {
+            $(".card").fadeOut(200)
+            $("." + category)
+              .delay(200)
+              .fadeIn(200)
+          }
+        })
+      })
+    </script>
+  </body>
+</html>

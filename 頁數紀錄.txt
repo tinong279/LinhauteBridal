@@ -20,9 +20,7 @@ http://localhost:5173/portfolio2.html
 http://localhost:5173/video.html
 11.禮服知識家
 http://localhost:5173/blog.html
-
-
-12.影片分享
-http://localhost:5173/video.html
-13.影片分享
-http://localhost:5173/video.html
+12.禮服知識家2
+http://localhost:5173/blog2.html
+13.合作品牌
+http://localhost:5173/partner.html
